@@ -1,0 +1,149 @@
+#form {
+  & h2 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-label-medium);
+    line-height: var(--lh-standard);
+    font-family: var(--ff-roboto-flex);
+    color: var(--content-primary);
+
+    text-transform: uppercase;
+
+    margin-bottom: 0.125rem;
+  }
+
+  & p {
+    font-weight: var(--fw-medium);
+    font-size: var(--fs-paragraph-medium);
+    line-height: var(--lh-standard);
+    font-family: var(--ff-roboto-flex);
+    color: var(--content-tertiary);
+  }
+
+  & .parameters {
+    margin-block: 2.5rem;
+
+    gap: 1.25rem;
+
+    & .top {
+      gap: 0.75rem;
+
+      & .inputContainer {
+        width: 5.375rem;
+
+        & .label {
+          text-align: center;
+        }
+
+        & .input {
+          position: absolute;
+          inset: 0;
+
+          &:hover {
+            inset: 0.0625rem;
+          }
+
+          &:focus {
+            inset: 0.125rem;
+          }
+        }
+      }
+    }
+
+    & .checkboxContainer {
+      align-items: center;
+
+      & .checkbox {
+        width: 1.875rem;
+        height: 1.25rem;
+
+        border-radius: 1rem;
+
+        background: var(--content-tertiary);
+
+        position: relative;
+
+        transition: background 0.3s ease;
+
+        & input {
+          position: absolute;
+          inset: 0;
+
+          opacity: 0;
+
+          cursor: pointer;
+        }
+
+        & .slider {
+          position: absolute;
+          top: 0.1875rem;
+          left: 0.1875rem;
+
+          width: 0.875rem;
+          height: 0.875rem;
+
+          border-radius: 50%;
+
+          background-color: var(--content-primary);
+
+          transition: left 0.3s ease;
+        }
+      }
+      &:has(input:checked) {
+        & .checkbox {
+          background: var(--gradient-background);
+        }
+
+        & .slider {
+          left: 0.8125rem;
+        }
+      }
+
+      & span {
+        font-weight: var(--fw-regular);
+        font-size: var(--fs-paragraph-small);
+        line-height: var(--lh-standard);
+        font-family: var(--ff-roboto-flex);
+        color: var(--content-primary);
+      }
+    }
+  }
+
+  & #btnContainer {
+    & .btn {
+      position: absolute;
+      inset: 0;
+
+      border-radius: 0.5rem;
+
+      justify-content: center;
+      align-items: center;
+
+      background: var(--background-tertiary);
+
+      & span {
+        font-weight: var(--fw-medium);
+        font-size: var(--fs-label-medium);
+        line-height: var(--lh-standard);
+        font-family: var(--ff-roboto-flex);
+        color: var(--content-primary);
+
+        text-transform: uppercase;
+      }
+
+      & img {
+        transition: transform 0.5s ease;
+      }
+
+      &:hover {
+        inset: 0.0625rem;
+
+        & img {
+          transform: translateX(0.5rem);
+        }
+      }
+    }
+  }
+}
+
+
+

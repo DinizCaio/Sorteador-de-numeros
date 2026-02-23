@@ -1,52 +1,60 @@
 :root {
   /* 1. Paleta de Cores */
   /* Content */
-  --content-primary: #FFFFFF;
-  --content-secondary: #C7C9CC;
-  --content-tertiary: #D9D9D9;
-  --content-brand: #C58DE7;
+  --content-primary: #ffffff;
+  --content-secondary: #c7c9cc;
+  --content-tertiary: #d9d9d9;
+  --content-brand: #c58de7;
   --color-inverse: #030203;
 
   /* Background */
   --background-primary: #020202;
   --background-secondary: #111012;
-  --background-tertiary: #24222E;
-  --background-brand: #C58DE7;
-  --background-gray: #3D3D3D;
+  --background-tertiary: #24222e;
+  --background-brand: #c58de7;
+  --background-gray: #3d3d3d;
 
   /* Accent */
-  --accent-pink: #D586E0;
-  --accent-blue: #91A1FA;
-  --accent-green: #77C0AF;
-  --accent-lime: #D1DC97;
-  --accent-red: #E9A9B3;
+  --accent-pink: #d586e0;
+  --accent-blue: #91a1fa;
+  --accent-green: #77c0af;
+  --accent-lime: #d1dc97;
+  --accent-red: #e9a9b3;
 
   /* Gradient */
-  --gradient-border: linear-gradient(to right, #77C0AF 0%, #D1DC97 14.84%, #E9A9B3 32.15%, #D586E0 65.79%, #91A1FA 84.58%);
-  --gradient-background: linear-gradient(to right, #D586E0 0%, #91A1FA 98.93%);
-  --gradient-content: linear-gradient(to right, #C7C9CC 0%, #3D3D3D 100%);
+  --gradient-border: linear-gradient(
+    to right,
+    #77c0af 0%,
+    #d1dc97 14.84%,
+    #e9a9b3 32.15%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
+  );
+  --gradient-background: linear-gradient(to right, #d586e0 0%, #91a1fa 98.93%);
+  --gradient-content: linear-gradient(to right, #c7c9cc 0%, #3d3d3d 100%);
 
   /* 2. Tipografia */
   /* Font Families */
-  --ff-sora: 'Sora', sans-serif;
-  --ff-roboto-mono: 'Roboto Mono', monospace;
-  --ff-roboto-flex: 'Roboto Flex', sans-serif;
+  --ff-sora: "Sora", sans-serif;
+  --ff-roboto-mono: "Roboto Mono", monospace;
+  --ff-roboto-flex: "Roboto Flex", sans-serif;
 
   /* Font Weights */
+  --fw-regular: 400;
   --fw-medium: 500;
   --fw-bold: 700;
   --fw-extrabold: 800;
 
   /* Font Sizes (Base 16px) */
-  --fs-display-large: 4.5rem;    /* 72px */
-  --fs-display-medium: 2.5rem;   /* 40px */
-  --fs-display-small: 2rem;      /* 32px */
-  --fs-overline: 1rem;           /* 16px */
-  --fs-paragraph-large: 1rem;    /* 16px */
+  --fs-display-large: 4.5rem; /* 72px */
+  --fs-display-medium: 2.5rem; /* 40px */
+  --fs-display-small: 2rem; /* 32px */
+  --fs-overline: 1rem; /* 16px */
+  --fs-paragraph-large: 1rem; /* 16px */
   --fs-paragraph-medium: 0.875rem; /* 14px */
   --fs-paragraph-small: 0.75rem; /* 12px */
-  --fs-label-medium: 1.25rem;    /* 20px */
-  --fs-label-small: 1rem;        /* 16px */
+  --fs-label-medium: 1.25rem; /* 20px */
+  --fs-label-small: 1rem; /* 16px */
 
   /* Line Heights */
   --lh-display: 1.3;

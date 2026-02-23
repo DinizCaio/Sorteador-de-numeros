@@ -1,0 +1,14 @@
+#logo {
+  margin-block: 4.75rem 5.5625rem;
+  margin-left: 7.5rem;
+}
+
+@media (width <= 390px) {
+  #logo {
+    margin-block: 2.75rem 2.875rem;
+    margin-left: 0;
+
+    display: flex;
+    justify-content: center;
+  }
+}

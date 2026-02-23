@@ -1,0 +1,60 @@
+@import url("./header.css");
+@import url("./form.css");
+@import url("./faq.css");
+
+#main {
+  display: grid;
+  grid-template-areas:
+    "header form"
+    "faq form";
+  column-gap: 6.75rem;
+
+  & #header {
+    grid-area: header;
+
+    width: 31.75rem;
+  }
+
+  & #form {
+    grid-area: form;
+
+    width: 30.125rem;
+
+    margin-block: auto;
+  }
+
+  & #faq {
+    grid-area: faq;
+
+    width: 24.125rem;
+
+    margin-top: 38px;
+    margin-right: 7.625rem;
+  }
+}
+
+@media (width <= 390px) {
+  #main {
+    grid-template-areas:
+      "header"
+      "form"
+      "faq";
+    row-gap: 3.5rem;
+
+    & #header {
+      width: 100%;
+    }
+
+    & #form {
+      width: 100%;
+    }
+
+    & #faq {
+      width: 100%;
+
+      margin-right: 0;
+
+      margin-bottom: 5.6875rem;
+    }
+  }
+}

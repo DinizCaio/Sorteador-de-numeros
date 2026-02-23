@@ -1,0 +1,41 @@
+#header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+
+  & span {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-overline);
+    line-height: var(--lh-standard);
+    font-family: var(--ff-roboto-mono);
+
+    text-transform: uppercase;
+
+    background: var(--gradient-content);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  & h1 {
+    font-weight: var(--fw-extrabold);
+    font-size: var(--fs-display-large);
+    line-height: var(--lh-display);
+    font-family: var(--ff-sora);
+    color: var(--content-primary);
+    letter-spacing: -0.04em;
+
+    text-transform: uppercase;
+  }
+}
+
+@media (width <= 390px) {
+  #header {
+    gap: 0.5rem;
+
+    & h1 {
+      font-size: var(--fs-display-medium);
+    }
+  }
+}
