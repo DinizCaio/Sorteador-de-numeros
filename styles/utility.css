@@ -50,11 +50,29 @@
   position: relative;
 
   &:hover {
-    background: var(--gradient-border);
+    background: conic-gradient(
+      from var(--angle),
+      #77c0af,
+      #d1dc97,
+      #e9a9b3,
+      #d586e0,
+      #91a1fa,
+      #77c0af
+    );
+    animation: rotate 5s linear infinite;
   }
 
   &:has(.input:focus) {
-    background: var(--gradient-border);
+    background: conic-gradient(
+      from var(--angle),
+      #77c0af,
+      #d1dc97,
+      #e9a9b3,
+      #d586e0,
+      #91a1fa,
+      #77c0af
+    );
+    animation: rotate 5s linear infinite;
   }
 }
 
@@ -79,5 +97,20 @@
 
   .container {
     width: 19.9375rem;
+  }
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes rotate {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
   }
 }
