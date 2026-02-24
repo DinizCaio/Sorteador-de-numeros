@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <div id="logo">
+    <div id="logo" class="container">
       <img src="./assets/logo.svg" alt="Logo Numbers" />
     </div>
 
@@ -29,69 +29,93 @@
       </header>
 
       <form action="submit" id="form">
-        <h2>quero sortear:</h2>
-        <p>
-          Defina o intervalo e a quantidade de números, clique em "Sortear" e
-          veja os resultados na tela. É rápido e fácil!
-        </p>
+        <div id="initial">
+          <h2>quero sortear:</h2>
+          <p>
+            Defina o intervalo e a quantidade de números, clique em "Sortear" e
+            veja os resultados na tela. É rápido e fácil!
+          </p>
 
-        <div class="parameters flex flex-col">
-          <div class="top flex">
-            <div id="qntContainer" class="inputContainer flex flex-col gap-0.5">
-              <label for="quantity" class="label">números</label>
+          <div class="parameters flex flex-col">
+            <div class="top flex">
+              <div
+                id="qntContainer"
+                class="inputContainer flex flex-col gap-0.5"
+              >
+                <label for="quantity" class="label">números</label>
 
-              <div class="background">
-                <input
-                  type="number"
-                  id="quantity"
-                  name="quantity"
-                  class="input"
-                  placeholder="0"
-                  required
-                />
+                <div class="background">
+                  <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    class="input"
+                    placeholder="0"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div
+                id="minContainer"
+                class="inputContainer flex flex-col gap-0.5"
+              >
+                <label for="minValue" class="label">de</label>
+
+                <div class="background">
+                  <input
+                    type="number"
+                    id="minValue"
+                    name="minValue"
+                    class="input"
+                    placeholder="0"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div
+                id="maxContainer"
+                class="inputContainer flex flex-col gap-0.5"
+              >
+                <label for="maxValue" class="label">até</label>
+
+                <div class="background">
+                  <input
+                    type="number"
+                    id="maxValue"
+                    name="maxValue"
+                    class="input"
+                    placeholder="0"
+                    required
+                  />
+                </div>
               </div>
             </div>
 
-            <div id="minContainer" class="inputContainer flex flex-col gap-0.5">
-              <label for="minValue" class="label">de</label>
-
-              <div class="background">
-                <input
-                  type="number"
-                  id="minValue"
-                  name="minValue"
-                  class="input"
-                  placeholder="0"
-                  required
-                />
+            <div class="checkboxContainer flex gap-0.5">
+              <div class="checkbox">
+                <input type="checkbox" name="checkbox" id="checkboxInput" />
+                <div class="slider"></div>
               </div>
+
+              <span>Não repetir números</span>
             </div>
-
-            <div id="maxContainer" class="inputContainer flex flex-col gap-0.5">
-              <label for="maxValue" class="label">até</label>
-
-              <div class="background">
-                <input
-                  type="number"
-                  id="maxValue"
-                  name="maxValue"
-                  class="input"
-                  placeholder="0"
-                  required
-                />
-              </div>
-            </div>
-          </div>
-
-          <div class="checkboxContainer flex gap-0.5">
-            <div class="checkbox">
-              <input type="checkbox" name="checkbox" id="checkboxInput" />
-              <div class="slider"></div>
-            </div>
-
-            <span>Não repetir números</span>
           </div>
         </div>
+
+        <!-- ELEMENTO A SER CRIADO COM JAVASCRIPT APÓS O SORTEIO -->
+
+        <!--         <div id="result" class="result">
+          <h3>resultado do sorteio</h3>
+          <span>1º resultado</span>
+
+          <ul id="numbersList">
+            <li>
+              <span>23</span>
+            </li>
+          </ul>
+        </div> -->
 
         <div id="btnContainer" class="background">
           <button type="submit" class="btn flex gap-0.5">
