@@ -1,0 +1,104 @@
+.rotation {
+  animation: rotation 2.5s ease;
+}
+
+.textIn {
+  animation: textIn 2.5s;
+}
+
+@keyframes rotation {
+  0% {
+    background-color: var(--background-brand);
+    transform: rotate(0deg);
+  }
+  8.33% {
+    background-color: var(--background-brand);
+    transform: rotate(60deg);
+  }
+  16.66% {
+    background-color: var(--background-brand);
+    transform: rotate(120deg);
+  }
+  25% {
+    background-color: var(--background-brand);
+    transform: rotate(180deg);
+  }
+  33.33% {
+    background-color: var(--background-brand);
+    transform: rotate(240deg);
+  }
+  41.66% {
+    background-color: var(--background-brand);
+    transform: rotate(300deg);
+  }
+  50% {
+    background-color: var(--background-brand);
+    transform: rotate(360deg);
+  }
+  58.33% {
+    background-color: var(--background-brand);
+    transform: rotate(420deg);
+  }
+  66.66% {
+    background-color: var(--background-brand);
+    transform: rotate(480deg);
+  }
+  75% {
+    background-color: var(--background-brand);
+    transform: rotate(540deg);
+  }
+  83.33% {
+    background-color: var(--background-brand);
+    transform: rotate(600deg);
+  }
+  91.66% {
+    background-color: var(--background-brand);
+    transform: rotate(660deg);
+  }
+  100% {
+    background-color: var(--background--primary);
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes textIn {
+  0% {
+    color: transparent;
+  }
+  8.33% {
+    color: transparent;
+  }
+  16.66% {
+    color: transparent;
+  }
+  25% {
+    color: transparent;
+  }
+  33.33% {
+    color: var(--content-inverse);
+  }
+  41.66% {
+    color: var(--content-inverse);
+  }
+  50% {
+    color: var(--content-inverse);
+  }
+  58.33% {
+    color: var(--content-inverse);
+  }
+  66.66% {
+    color: var(--content-inverse);
+  }
+  75% {
+    color: var(--content-inverse);
+  }
+  83.33% {
+    color: var(--content-inverse);
+  }
+  91.66% {
+    color: var(--content-inverse);
+  }
+  100% {
+    color: var(--content-brand);
+  }
+}

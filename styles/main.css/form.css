@@ -131,7 +131,7 @@
       }
 
       & img {
-        transition: transform 0.5s ease;
+        transition: all 0.5s ease;
       }
 
       &:hover {
@@ -144,11 +144,46 @@
     }
   }
 
-  & .initial {
-    display: none;
+  & #btnResetContainer {
+    margin-top: 1rem;
+
+    & .btn {
+      position: absolute;
+      inset: 0;
+
+      border-radius: 0.5rem;
+
+      justify-content: center;
+      align-items: center;
+
+      background: var(--background-tertiary);
+
+      & span {
+        font-weight: var(--fw-medium);
+        font-size: var(--fs-label-medium);
+        line-height: var(--lh-standard);
+        font-family: var(--ff-roboto-flex);
+        color: var(--content-primary);
+
+        text-transform: uppercase;
+      }
+
+      & img {
+        transition: transform 0.5s ease;
+      }
+
+      &:hover {
+        inset: 0.0625rem;
+
+        & img {
+          transform: translateX(0.5rem);
+          transform: rotate(360deg);
+        }
+      }
+    }
   }
 
-  & #result {
+  & .result {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -164,19 +199,6 @@
       text-align: center;
     }
 
-    & span {
-      font-weight: var(--fw-bold);
-      font-size: var(--fs-overline);
-      line-height: var(--lh-standard);
-      font-family: var(--ff-roboto-mono);
-      color: var(--content-secondary);
-
-      text-transform: uppercase;
-      text-align: center;
-
-      margin-top: 0.25rem;
-    }
-
     & ul {
       margin-block: 2.5rem;
       display: grid;
@@ -188,14 +210,32 @@
         justify-content: center;
         align-items: center;
 
+        position: relative;
+
         & span {
           font-weight: var(--fw-bold);
           font-size: 3rem;
           line-height: var(--lh-standard);
           font-family: var(--ff-roboto-mono);
           color: var(--content-brand);
+
+          position: relative;
+          z-index: 10;
+        }
+
+        & div {
+          position: absolute;
+
+          width: 5.25rem;
+          height: 6.25rem;
+
+          border-radius: 1.125rem;
         }
       }
     }
+  }
+
+  & .hidden {
+    display: none;
   }
 }

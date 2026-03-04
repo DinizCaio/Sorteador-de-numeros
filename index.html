@@ -52,6 +52,7 @@
                     class="input"
                     placeholder="0"
                     required
+                    min="0"
                   />
                 </div>
               </div>
@@ -104,23 +105,32 @@
           </div>
         </div>
 
-        <!-- ELEMENTO A SER CRIADO COM JAVASCRIPT APÓS O SORTEIO -->
-
-        <!--         <div id="result" class="result">
+        <div id="result" class="hidden result">
           <h3>resultado do sorteio</h3>
-          <span>1º resultado</span>
-
-          <ul id="numbersList">
-            <li>
-              <span>23</span>
-            </li>
-          </ul>
-        </div> -->
+          <ul id="numbersList"></ul>
+        </div>
 
         <div id="btnContainer" class="background">
           <button type="submit" class="btn flex gap-0.5">
-            <span>sortear</span>
-            <img src="./assets/icons/right-arrow.svg" alt="Ícone de seta" />
+            <span id="span">sortear</span>
+            <img
+              id="arrow"
+              src="./assets/icons/right-arrow.svg"
+              alt="Ícone de seta"
+            />
+            <img
+              id="repeat"
+              src="./assets/icons/repeat.svg"
+              alt="Ícone de repetição"
+              class="hidden"
+            />
+          </button>
+        </div>
+
+        <div id="btnResetContainer" class="background hidden">
+          <button type="reset" class="btn flex gap-0.5">
+            <span>mudar parâmetros</span>
+            <img src="./assets/icons/reset.svg" alt="Ícone de reset" />
           </button>
         </div>
       </form>
@@ -149,6 +159,19 @@
               <p>
                 Sim, você pode definir os valores mínimo e máximo para o
                 intervalo dos números sorteados.
+              </p>
+            </div>
+          </li>
+
+          <li class="questionItem flex">
+            <img src="./assets/icons/question.svg" alt="Ícone de pergunta" />
+
+            <div class="questionContent flex flex-col">
+              <h3>Os parâmetros inicial e final, são inclusos no sorteio?</h3>
+
+              <p>
+                Sim, os números sorteados podem incluir os valores mínimo e
+                máximo definidos.
               </p>
             </div>
           </li>
